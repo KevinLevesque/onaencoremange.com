@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "recettes",
+  "info": {
+    "name": "Recettes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nom"
+    },
+    "Instructions": {
+      "type": "richtext"
+    },
+    "composantes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "prepatation.section"
+    },
+    "tags": {
+      "collection": "tags",
+      "via": "recettes",
+      "dominant": true
+    },
+    "alternatives": {
+      "type": "richtext"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "recettes_necessaires": {
+      "collection": "recettes",
+      "via": "utilise_dans_recettes",
+      "dominant": true
+    },
+    "utilise_dans_recettes": {
+      "collection": "recettes",
+      "via": "recettes_necessaires"
+    }
+  }
+}

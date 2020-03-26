@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "components_prepatation_ingredients",
+  "info": {
+    "name": "Ingredient",
+    "icon": "utensil-spoon"
+  },
+  "options": {},
+  "attributes": {
+    "ingredient": {
+      "model": "ingredients"
+    },
+    "Preparation": {
+      "type": "string"
+    },
+    "mesure": {
+      "model": "mesures"
+    },
+    "quantite": {
+      "type": "decimal"
+    }
+  }
+}

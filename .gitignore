@@ -1,0 +1,6 @@
+/docker-compose.yml
+.idea
+/webapp/node_modules/
+/webapp/dist/
+/webapp/.cache/
+/api/node_modules/

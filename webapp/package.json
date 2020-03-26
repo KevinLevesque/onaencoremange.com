@@ -1,0 +1,29 @@
+{
+  "name": "recettes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0",
+    "dotenv": "^8.2.0",
+    "parcel-bundler": "^1.12.4",
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-markdown": "^2.2.4",
+    "vue-multiselect": "^2.1.6",
+    "vue-resize-text": "^0.1.1",
+    "vue-router": "^3.1.6"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.1.1",
+    "sass": "^1.26.3",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

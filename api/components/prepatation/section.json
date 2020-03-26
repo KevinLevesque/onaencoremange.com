@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "components_prepatation_sections",
+  "info": {
+    "name": "Composante",
+    "icon": "window-maximize"
+  },
+  "options": {},
+  "attributes": {
+    "Nom": {
+      "type": "string",
+      "required": false,
+      "default": "Recette"
+    },
+    "ingredients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "prepatation.ingredient"
+    }
+  }
+}
