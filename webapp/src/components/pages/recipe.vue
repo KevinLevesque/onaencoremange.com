@@ -51,7 +51,7 @@
 
         <div v-if="recette.alternatives">
             <h3>Alternatives</h3>
-            <div>{{recette.alternatives}}</div>
+            <div v-html="recette.alternatives"></div>
         </div>
 
 
@@ -64,6 +64,13 @@
                     <carte-recette :recette="utilise_dans_recette"></carte-recette>
                 </template>
             </div>
+        </div>
+
+
+        <div v-if="recette.utilise_dans_recettes.length > 0" >
+            <hr>
+            <h5>Références </h5>
+            <div v-html="recette.references" class="references"></div>
         </div>
 
 
@@ -149,6 +156,11 @@
 </script>
 
 <style lang="scss" scoped>
+
+
+    .references{
+        font-size: 0.7em;
+    }
 
     .instructions{
         ol >li {

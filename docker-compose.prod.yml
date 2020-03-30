@@ -1,0 +1,24 @@
+version: '3'
+services:
+  api:
+    image: "node"
+    user: "node"
+    ports:
+      - 1337:1337
+    working_dir: /home/node/app
+    volumes:
+      - ./api:/home/node/app
+    command: "npm run start"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_HOST=db
+      - DATABASE_PORT=3306
+      - DATABASE_NAME=recipes
+      - DATABASE_USERNAME=root
+      - DATABASE_PASSWORD=F+y+HpB?*LEg7aj$
+  db:
+    image: "mariadb"
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: F+y+HpB?*LEg7aj$

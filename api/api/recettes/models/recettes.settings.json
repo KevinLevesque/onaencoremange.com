@@ -47,6 +47,9 @@
     "utilise_dans_recettes": {
       "collection": "recettes",
       "via": "recettes_necessaires"
+    },
+    "references": {
+      "type": "richtext"
     }
   }
 }
