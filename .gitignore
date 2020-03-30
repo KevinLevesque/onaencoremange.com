@@ -4,3 +4,4 @@
 /webapp/dist/
 /webapp/.cache/
 /api/node_modules/"
+/webapp/.env
