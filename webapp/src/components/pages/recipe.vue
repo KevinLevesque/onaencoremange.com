@@ -67,7 +67,7 @@
         </div>
 
 
-        <div v-if="recette.utilise_dans_recettes.length > 0" >
+        <div v-if="recette.references.length > 0" >
             <hr>
             <h5>Références </h5>
             <div v-html="recette.references" class="references"></div>
